@@ -15,6 +15,12 @@ title: Atom representation of Research Data Context
                         <dt>Latest version:</dt>
 
                         <dd> <a href="{{site.baseurl}}/">{{site.url}}</a> </dd>
+                        
+                        {% if page.previous.url %}
+                        <dt>Previous version:</dt>
+                        
+                        <dd><a href="{{page.previous.url}}">{{site.url}}{{page.previous.url}}</a></dd>
+                        {% endif %} 
 
                         <h2>Draft specification</h2>
                         
