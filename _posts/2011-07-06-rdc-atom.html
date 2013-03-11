@@ -1,28 +1,23 @@
 ---
 layout: default
-title: Atom representation of Research Data Context
+title: Atom representation of Research Data Context 1.0 draft 2011-07-06
 ---
 
-<div
-                        class="head">
-                        <h1>Atom representation of Research Data
-                        Context</h1>
-                        <dt>This version:</dt>
+<div class="head">
+  <h1>Atom representation of Research Data Context</h1>
 
-                        <dd> <a
-                                href="{{page.url}}">{{site.url}}{{page.url}}</a> </dd>
+  <dt>This version:</dt>
+  <dd><a href="{{page.url}}">{{site.url}}{{page.url}}</a></dd>
 
-                        <dt>Latest version:</dt>
-
-                        <dd> <a href="{{site.baseurl}}/">{{site.url}}</a> </dd>
+  <dt>Latest version:</dt>
+  <dd><a href="{{site.baseurl}}/">{{site.url}}</a></dd>
                         
-                        {% if page.previous.url %}
-                        <dt>Previous version:</dt>
+  {% if page.previous.url %}
+  <dt>Previous version:</dt>
+  <dd><a href="{{page.previous.url}}">{{site.url}}{{page.previous.url}}</a></dd>
+  {% endif %} 
                         
-                        <dd><a href="{{page.previous.url}}">{{site.url}}{{page.previous.url}}</a></dd>
-                        {% endif %} 
-                        
-                        <h2>Draft specification</h2>
+  <h2>Draft specification</h2>
                         
                         <dt>Authors:</dt>
 
