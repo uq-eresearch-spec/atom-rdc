@@ -1,3 +1,3 @@
 exclude:    Gemfile, Gemfile.lock, .gitignore
 permalink:  /:title-:year:month:day.html
-url:        http://uq-eresearch-spec.github.com/rdc-atom
+url:        http://uq-eresearch-spec.github.com/atom-rdc
