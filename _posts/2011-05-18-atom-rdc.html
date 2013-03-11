@@ -1,10 +1,10 @@
 ---
 layout: default
-title: Atom representation of Research Data Context 1.0 draft 2011-07-06
+title: Atom representation of Research Data Context 1.0 draft 2011-05-18
 ---
 
 <div class="head">
-  <h1>Atom representation of Research Data Context</h1>
+  <h1>Atom representation of Research Data Context 1.0</h1>
 
   <dt>This version:</dt>
   <dd><a href="{{site.url}}{{page.url}}">{{site.url}}{{page.url}}</a></dd>
@@ -16,7 +16,7 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
   <dt>Previous version:</dt>
   <dd><a href="{{site.url}}{{page.previous.url}}">{{site.url}}{{page.previous.url}}</a></dd>
   {% endif %} 
-                        
+
   <h2>Draft specification</h2>
                         
                         <dt>Authors:</dt>
@@ -199,10 +199,10 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                 <div
                         class="example">
                         <pre>&lt;entry xmlns="http://www.w3.org/2005/Atom"&gt;
-
+    
     &lt;!-- data collection description --&gt;
     &lt;id&gt;http://oztrak.uq.edu.au/collection/abc123&lt;/id&gt;
-
+        
     &lt;link rel="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" href="http://purl.org/dc/dcmitype/Collection" title="Collection"/&gt;
 
     &lt;title type="text"&gt;Location and temperature data for estuarine crocodiles on Cape York Peninsula
@@ -211,22 +211,22 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
     &lt;content type="text"&gt;Estuarine crocodile location and temperature observations recorded using
         acoustic telemetry since 2007 on Cape York Peninsula, Queensland, Australia. The data comes
         from sensors attached to more than sixty estuarine crocodiles. Variables measured include
-        location, depth, environmental temperature and body temperature.
+        location, depth, environmental temperature and body temperature. 
     &lt;/content&gt;
-
+    
     &lt;link rel="http://xmlns.com/foaf/0.1/page" href="http://www.uq.edu.au/eco-lab/index.html?page=39442"/&gt;
-
+    
     &lt;category label="Zoology"/&gt;
     &lt;category term="Ecology"/&gt;
-
+    
     &lt;author&gt;
         &lt;name&gt;Dr Hamish Campbell&lt;/name&gt;
         &lt;email&gt;hamish.campbell@uq.edu.au&lt;/email&gt;
     &lt;/author&gt;
-
+ 
     &lt;!-- metadata about the description --&gt;
     &lt;link rel="self" href="http://oztrack.uq.edu.au/collection/abc123.atom"/&gt;
-    &lt;updated&gt;2010-10-08T05:58:02.781Z&lt;/updated&gt;
+    &lt;updated&gt;2010-10-08T05:58:02.781Z&lt;/updated&gt;     
     &lt;source&gt;
         &lt;author&gt;
             &lt;name&gt;OzTrack System&lt;/name&gt;
@@ -241,10 +241,10 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                 <div
                         class="example">
                         <pre>&lt;entry xmlns="http://www.w3.org/2005/Atom"&gt;
-
+    
     &lt;!-- data collection description --&gt;
     &lt;id&gt;http://oztrak.uq.edu.au/collection/abc123&lt;/id&gt;
-
+        
     &lt;link rel="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" href="http://purl.org/dc/dcmitype/Collection" title="Collection"/&gt;
 
     &lt;title type="text"&gt;Location and temperature data for estuarine crocodiles on Cape York Peninsula
@@ -253,25 +253,25 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
     &lt;content type="text"&gt;Estuarine crocodile location and temperature observations recorded using
         acoustic telemetry since 2007 on Cape York Peninsula, Queensland, Australia. The data comes
         from sensors attached to more than sixty estuarine crocodiles. Variables measured include
-        location, depth, environmental temperature and body temperature.
+        location, depth, environmental temperature and body temperature. 
     &lt;/content&gt;
-
+    
     &lt;link rel="http://xmlns.com/foaf/0.1/page" href="http://www.uq.edu.au/eco-lab/index.html?page=39442"/&gt;
-
+    
     &lt;category label="Zoology"/&gt;
     &lt;category term="Ecology"/&gt;
-
+    
     &lt;author&gt;
         &lt;name&gt;Dr Hamish Campbell&lt;/name&gt;
         &lt;email&gt;hamish.campbell@uq.edu.au&lt;/email&gt;
     &lt;/author&gt;
-
-    <span class="hilite">&lt;rdfa:meta property="http://purl.org/dc/terms/temporal" content="start=2007-08" datatype="http://purl.org/dc/terms/Period"/&gt;</span>
+    
+    <span class="hilite">&lt;rdfa:meta property="http://purl.org/dc/terms/temporal" content="start=2007-08" datatype="http://purl.org/dc/terms/Period"/&gt;</span>  
     <span class="hilite">&lt;georss:polygon&gt;-10.5 140 -17 140 -17 145.5 -10 145.5 -10.5 140&lt;/georss:polygon&gt;</span>
-
+ 
     &lt;!-- metadata about the description --&gt;
     &lt;link rel="self" href="http://oztrack.uq.edu.au/collection/abc123.atom"/&gt;
-    &lt;updated&gt;2010-10-08T05:58:02.781Z&lt;/updated&gt;
+    &lt;updated&gt;2010-10-08T05:58:02.781Z&lt;/updated&gt;     
     &lt;source&gt;
         &lt;author&gt;
             &lt;name&gt;OzTrack System&lt;/name&gt;
@@ -292,57 +292,57 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                         <pre>&lt;feed xmlns="http://www.w3.org/2005/Atom"&gt;
     &lt;id&gt;http://www.gpem.uq.edu.au/qcpr/aus-voting2010/feed&lt;/id&gt;
     &lt;title&gt;Metadata: Mapping and Statistical Analysis of Voting Patterns at the 2010 Australia Federal Election On-line&lt;/title&gt;
-    &lt;updated&gt;2010-10-08T05:58:02Z&lt;/updated&gt;
+    &lt;updated&gt;2010-10-08T05:58:02Z&lt;/updated&gt;  
     &lt;author&gt;
         &lt;name&gt;Queensland Centre for Population Research&lt;/name&gt;
         &lt;email&gt;qcpr@uq.edu.au&lt;/email&gt;
     &lt;/author&gt;
     &lt;link rel="self" href="http://www.gpem.uq.edu.au/qcpr/aus-voting2010/feed.atom"/&gt;
-
+    
 
     &lt;!-- collection --&gt;
     &lt;entry&gt;
         <span class="hilite">&lt;id&gt;http://www.gpem.uq.edu.au/qcpr/aus-voting2010/data&lt;/id&gt;</span>
-
+        
         &lt;link rel="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" href="http://purl.org/dc/dcmitype/Collection" title="Collection"/&gt;
 
         &lt;title type="text"&gt;Variables derived from the 2006 Census of Population &amp; Housing and from voting
         results at Polling Booth Catchment level for the 2010 Australian Federal Election&lt;/title&gt;
-
+        
         &lt;content type="text"&gt;This collection contains variables derived from the 2006 Australian census
-        representing demographic and socio-economic characteristics of the population living in polling booth
+        representing demographic and socio-economic characteristics of the population living in polling booth 
         catchments. It also contains variables derived from voting results at the 2010 Australian federal election
         at the polling booth level.&lt;/content&gt;
-
+        
         &lt;author&gt;
             &lt;name&gt;Queensland Centre for Population Research&lt;/name&gt;
             &lt;email&gt;qcpr@uq.edu.au&lt;/email&gt;
             <span class="hilite">&lt;uri&gt;http://www.gpem.uq.edu.au/qcpr&lt;/uri&gt;</span>
         &lt;/author&gt;
-
+        
         &lt;link rel="self" href="http://www.gpem.uq.edu.au/qcpr/aus-voting2010/data.atom"/&gt;
             &lt;updated&gt;2010-10-08T05:58:02Z&lt;/updated&gt;
     &lt;/entry&gt;
-
+    
     &lt;!-- collecting agent --&gt;
     &lt;entry&gt;
         <span class="hilite">&lt;id&gt;http://www.gpem.uq.edu.au/qcpr&lt;/id&gt;</span>
-
+        
         &lt;link rel="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" href=" http://xmlns.com/foaf/0.1/Group " title="Group"/&gt;
-
+      
         &lt;title type="text"&gt;Queensland Centre for Population Research&lt;/title&gt;
         &lt;content type="text"&gt;The Queensland Centre for Population Research undertakes pure and applied research
         and provides education and training in demography and population geography. The work of the centre focuses
-        especially on demographic change at the local and regional level, both within Australia and overseas and
+        especially on demographic change at the local and regional level, both within Australia and overseas and 
         encompasses theory, methodology and empirical analysis.&lt;/content&gt;
-
+        
         &lt;link rel="http://xmlns.com/foaf/0.1/mbox" href="mailto:qcpr@uq.edu.au"/&gt;
         &lt;link rel="http://xmlns.com/foaf/0.1/page" href="http://www.gpem.uq.edu.au/qcpr"/&gt;
-
+        
         <span class="hilite">&lt;link rel="http://xmlns.com/foaf/0.1/made" href="http://www.gpem.uq.edu.au/qcpr/aus-voting2010/data"/&gt;</span>
-
+        
         &lt;link rel="self" href="http://www.gpem.uq.edu.au/qcpr.atom"/&gt;
-        &lt;updated&gt;2010-10-08T05:58:02Z&lt;/updated&gt;
+        &lt;updated&gt;2010-10-08T05:58:02Z&lt;/updated&gt; 
         &lt;source&gt;
             &lt;author&gt;
                 &lt;name&gt;The University of Queensland&lt;/name&gt;
@@ -399,7 +399,6 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                 <p>The keywords "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD",
                         "SHOULD NOT", "RECOMMENDED", "MAY", and "OPTIONAL" in this document are to
                         be interpreted as described in <a href="http://tools.ietf.org/html/rfc2119">RFC 2119</a>.</p>
-
                 <h2><a
                         id="s_conformance" class="todo">1.4. Conformance</a></h2>
 
@@ -456,7 +455,7 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                         <dd>http://xmlns.com/foaf/0.1/page</dd>
                         <dd>http://xmlns.com/foaf/0.1/title</dd>
 
-                        <dt class="todo">Properties from the ANDS-VITRO vocabulary REFERENCE NEEDED</dt>
+                        <dt>Properties from the ANDS-VITRO vocabulary REFERENCE NEEDED</dt>
                         <dd>http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#hasOutput</dd>
                         <dd>http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#hasParticipant</dd>
                         <dd>http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#isManagerOf</dd>
@@ -504,8 +503,8 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                         class="example">
                         <pre>&lt;entry xmlns:rdfa="http://www.w3.org/ns/rdfa#"
     ...
-    &lt;rdfa:meta property="http://purl.org/dc/terms/accessRights"
-               content="Contact the data curator regarding permission and procedures for accessing
+    &lt;rdfa:meta property="http://purl.org/dc/terms/accessRights" 
+               content="Contact the data curator regarding permission and procedures for accessing 
                         the original data."/&gt;
     ...
  &lt;entry&gt;</pre> </div>
@@ -585,41 +584,41 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                 <dl>
                         <dt>Data collections</dt>
                         <dd><code>href="http://purl.org/dc/dcmitype/Collection"
-                                title="Collection"</code></dd>
+                                label="Collection"</code></dd>
                         <dd><code>href="http://purl.org/dc/dcmitype/Dataset"
-                                title="Dataset"</code></dd>
+                                label="Dataset"</code></dd>
 
                         <dt>Agents</dt>
-                        <dd><code>href="http://xmlns.com/foaf/0.1/Person" title="Person"</code></dd>
-                        <dd><code>href="http://xmlns.com/foaf/0.1/Group" title="Group"</code></dd>
+                        <dd><code>href="http://xmlns.com/foaf/0.1/Person" label="Person"</code></dd>
+                        <dd><code>href="http://xmlns.com/foaf/0.1/Group" label="Group"</code></dd>
 
 
                         <dt>Activities</dt>
                         <dd><code>href="http://xmlns.com/foaf/0.1/Project"
-                                title="Project"</code></dd>
+                                label="Project"</code></dd>
                         <dd><code>href="http://vivoweb.org/ontology/core#Program"
-                                title="Program"</code></dd>
+                                label="Program"</code></dd>
 
 
                         <dt>Services</dt>
                         <dd><code>href="http://www.e-framework.org/Contributions/ServiceGenres/Create"
-                                title="Create"</code></dd>
+                                label="Create"</code></dd>
                         <dd><code>href="http://www.e-framework.org/Contributions/ServiceGenres/Generate"
-                                title="Generate"</code></dd>
+                                label="Generate"</code></dd>
                         <dd><code>href="http://www.e-framework.org/Contributions/ServiceGenres/Report"
-                                title="Report"</code></dd>
+                                label="Report"</code></dd>
                         <dd><code>href="http://www.e-framework.org/Contributions/ServiceGenres/Annotate"
-                                title="Annotate"</code></dd>
+                                label="Annotate"</code></dd>
                         <dd><code>href="http://www.e-framework.org/Contributions/ServiceGenres/Transform"
-                                title="Transform"</code></dd>
+                                label="Transform"</code></dd>
                         <dd><code>href="http://www.e-framework.org/Contributions/ServiceGenres/Assemble"
-                                title="Assemble"</code></dd>
+                                label="Assemble"</code></dd>
                         <dd><code>href="http://www.e-framework.org/Contributions/ServiceGenres/Harvest"
-                                title="Harvest"</code></dd>
+                                label="Harvest"</code></dd>
                         <dd><code>href="http://www.e-framework.org/Contributions/ServiceGenres/Search"
-                                title="Search"</code></dd>
+                                label="Search"</code></dd>
                         <dd><code>href="http://www.e-framework.org/Contributions/ServiceGenres/Syndicate"
-                                title="Syndicate"</code></dd>
+                                label="Syndicate"</code></dd>
                 </dl>
 
                 <h2><a
@@ -648,17 +647,6 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                         <td>1</td>
                                 </tr>
                                 <tr>
-                                        <td>alternative title</td>
-                                        <td><code>&lt;rdfa:meta
-                                                property="http://purl.org/dc/terms/alternative"
-                                                content="ALTERNATIVE NAME"/&gt;</code></td>
-                                        <td>Primary name for the entity</td>
-                                        <td>0..*</td>
-                                        <td>0..*</td>
-                                        <td>0..*</td>
-                                        <td>0..*</td>
-                                </tr>
-                                <tr>
                                         <td>description</td>
                                         <td><code>&lt;content
                                                 type=”text”&gt;DESCRIPTION&lt;/content&gt;</code></td>
@@ -670,7 +658,7 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                 </tr>
                                 <tr>
                                         <td>web page</td>
-                                        <td><code>&lt;link rel=”http://xmlns.com/foaf/0.1/homepage”
+                                        <td><code>&lt;link rel=”http://xmlns.com/foaf/0.1/page”
                                                 href=”URI”/&gt;</code></td>
                                         <td> URI for a human-readable document describing the entity
                                                 or how to access it</td>
@@ -683,10 +671,8 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                         <td>email</td>
                                         <td><code>&lt;link rel=”http://xmlns.com/foaf/0.1/mbox”
                                                 href=”MAILTO-URI”/&gt;</code> </td>
-                                        <td>An internet mailbox for contacting an Agent.
-                                            When applied to a Data collection, it is the contact point for an Agent
-                                            that can mediate access</td>
-                                        <td>0..*</td>
+                                        <td>An internet mailbox for an Agent</td>
+                                        <td></td>
                                         <td>0..*</td>
                                         <td></td>
                                         <td></td>
@@ -820,13 +806,35 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                                 property="http://purl.org/dc/terms/temporal"
                                                 content="TEMPORAL ENCODING"
                                                 datatype="URI-ENCODING-SCHEME"/&gt;</code> </td>
-                                        <td>An indicator of the temporal scope of the entity.
-                                            This profile recommends using the DCMI
-                                            Period format
-                                            http://dublincore.org/documents/dcmi-period/ to
-                                            encode the content attribute. </td>
+                                        <td>An indicator of the temporal scope of the Data
+                                                Collection. This profile recommends using the DCMI
+                                                Period format
+                                                http://dublincore.org/documents/dcmi-period/ to
+                                                encode the content attribute. </td>
                                         <td>0..*</td>
                                         <td></td>
+                                        <td>0..*</td>
+                                        <td>0..*</td>
+                                </tr>
+                                <tr>
+
+                                        <td>keyword</td>
+                                        <td><code>&lt;category term=”LABEL”/&gt;</code></td>
+                                        <td>A subject or topic of the entity from an uncontrolled
+                                                vocabulary</td>
+                                        <td>0..*</td>
+                                        <td>0..*</td>
+                                        <td>0..*</td>
+                                        <td>0..*</td>
+                                </tr>
+                                <tr>
+                                        <td>subject</td>
+                                        <td><code>&lt;category scheme="URI-SCHEME" term="URI-TERM"
+                                                label="LABEL"/&gt;</code></td>
+                                        <td>A subject or topic of the entity from a controlled
+                                                vocabulary</td>
+                                        <td>0..*</td>
+                                        <td>0..*</td>
                                         <td>0..*</td>
                                         <td>0..*</td>
                                 </tr>
@@ -862,10 +870,10 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                         <td></td>
                                 </tr>
                                 <tr>
-                                        <td>manager</td>
+                                        <td>publisher / custodian</td>
                                         <td><code>&lt;link rel="http://purl.org/dc/terms/publisher"
                                                 href="URI-AGENT" label="AGENT NAME"/&gt;</code></td>
-                                        <td>An Agent responsible for managing
+                                        <td>An Agent responsible for publishing or maintaining a
                                                 Data Collection or providing a Service</td>
                                         <td>0..*</td>
                                         <td></td>
@@ -891,7 +899,7 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                         </thead>
                         <tbody>
                                 <tr>
-                                        <td>rights</td>
+                                        <td>point</td>
                                         <td><code>&lt;rights&gt;RIGHTS
                                                 TEXT&lt;/rights&gt;</code></td>
                                         <td>Information about rights held in and over the
@@ -909,10 +917,10 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                         <td>Information about who can access the entity, including
                                                 access restrictions based on privacy, security, or
                                                 other policies.</td>
-                                        <td>1..*</td>
+                                        <td>0..*</td>
                                         <td></td>
                                         <td></td>
-                                        <td>1..*</td>
+                                        <td>0..*</td>
                                 </tr>
                                 <tr>
                                         <td>license</td>
@@ -920,11 +928,10 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                                 href="LICENSE_URI"/&gt;</code></td>
                                         <td>Identifies a document containing a license for use of
                                                 the entity.</td>
-                                        <td>0..*</td>
+                                        <td>1..*</td>
                                         <td></td>
                                         <td></td>
-                                        <td>0..*</td>
-
+                                        <td>1..*</td>
                                 </tr>
                         </tbody>
                 </table>
@@ -950,7 +957,7 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                                 title="COLLECTION TITLE"/&gt;</code></td>
                                         <td>A Data Collection that is somehow related to the Data
                                                 Collection being described</td>
-                                        <td>0..*</td>
+                                        <td>1..*</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -963,7 +970,7 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                                 title"/&gt;</code></td>
                                         <td>A Publication that provides contextual information about
                                                 a Data Collection</td>
-                                        <td>0..*</td>
+                                        <td>1..*</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -974,8 +981,9 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                                 rel="http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#isOutputOf"
                                                 href="ACTIVITY_URI"/&gt; title="ACTIVITY
                                                 NAME"</code></td>
-                                        <td>An Activity that helped produce the Data Collection</td>
-                                        <td>0..*</td>
+                                        <td>Identifies a document containing a license for use of
+                                                the entity.</td>
+                                        <td>1..*</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -988,7 +996,7 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                                 NAME"/&gt;</code></td>
                                         <td>A Report, Harvest, Search, or Syndicate Service that
                                                 provides access to the Data Collection.</td>
-                                        <td>0..*</td>
+                                        <td>1..*</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -1012,7 +1020,7 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                         </thead>
                         <tbody>
                                 <tr>
-                                        <td>created</td>
+                                        <td>related collection</td>
                                         <td><code>&lt;link rel="http://xmlns.com/foaf/0.1/made"
                                                 href="COLLECTION_URI" title="COLLECTION
                                                 TITLE"/&gt;</code></td>
@@ -1023,11 +1031,12 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                         <td></td>
                                 </tr>
                                 <tr>
-                                        <td>manages</td>
+                                        <td>publishes</td>
                                         <td><code>&lt;link
                                                 rel="http://www.ands.org.au/ontologies/ns/0.1/VITRO-ANDS.owl#isManagerOf"
                                                 href="COLLECTION-URI" title="COLLECTION TITLE"/&gt;</code></td>
-                                        <td>A Data Collection that this Agent manages.</td>
+                                        <td>A Data Collection that this Agent makes available
+                                                (publishes) or maintains.</td>
                                         <td></td>
                                         <td>0..*</td>
                                         <td></td>
@@ -1045,21 +1054,10 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                         <td></td>
                                         <td></td>
                                 </tr>
-                                <tr>
-                                    <td>publications page</td>
-                                    <td><code>lt;link
-                                        rel="http://xmlns.com/foaf/0.1/publications"
-                                        href="URI"/&gt; title="PAGE NAME"</code></td>
-                                    <td>A web page listing the publications of this agent</td>
-                                    <td></td>
-                                    <td>0..*</td>
-                                    <td></td>
-                                    <td></td>
-                                </tr>
                         </tbody>
                 </table>
 
-                <p>Note: an agent MUST participate in a "created" or "manages" relationship.</p>
+                <p>Note: an agent MUST participate in at least one of these relationships.</p>
 
                 <h2><a
                         id="s_activityrelations">3.9. Activity relationships</a></h2>
@@ -1107,7 +1105,7 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                         <td>An agent that funds the Activity</td>
                                         <td></td>
                                         <td></td>
-                                        <td>0..*</td>
+                                        <td>1..*</td>
                                         <td></td>
                                 </tr>
                         </tbody>
@@ -1219,7 +1217,7 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                 <tr>
                                         <td>description publisher</td>
                                         <td><pre>&lt;source&gt;
-    &lt;link rel="http://purl.org/dc/terms/publisher"
+    &lt;link rel="http://purl.org/dc/terms/publisher" 
     href="AGENT_URI" title="AGENT NAME"/&gt;
 &lt;source&gt;</pre> </td>
                                         <td>An Agent responsible for publishing the Atom entry.</td>
@@ -1245,7 +1243,7 @@ title: Atom representation of Research Data Context 1.0 draft 2011-07-06
                                         <td>description license</td>
                                         <td><pre>
 &lt;source&gt;
-    &lt;link rel="license" type="Internet Media Type"
+    &lt;link rel="license" type="Internet Media Type" 
     href="LICENSE_URI"/&gt;
 &lt;source&gt;</pre> </td>
                                         <td>URI for a document containing a license for the Atom

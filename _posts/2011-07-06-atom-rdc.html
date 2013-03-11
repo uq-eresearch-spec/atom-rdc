@@ -1,29 +1,24 @@
 ---
 layout: default
-title: Atom representation of Research Data Context
+title: Atom representation of Research Data Context 1.0 draft 2011-07-06
 ---
 
-<div
-                        class="head">
-                        <h1>Atom representation of Research Data
-                        Context</h1>
-                        <dt>This version:</dt>
+<div class="head">
+  <h1>Atom representation of Research Data Context 1.0</h1>
 
-                        <dd> <a
-                                href="{{page.url}}">{{site.url}}{{page.url}}</a> </dd>
+  <dt>This version:</dt>
+  <dd><a href="{{site.url}}{{page.url}}">{{site.url}}{{page.url}}</a></dd>
 
-                        <dt>Latest version:</dt>
-
-                        <dd> <a href="{{site.baseurl}}/">{{site.url}}</a> </dd>
+  <dt>Latest version:</dt>
+  <dd><a href="{{site.url}}/">{{site.url}}</a></dd>
                         
-                        {% if page.previous.url %}
-                        <dt>Previous version:</dt>
+  {% if page.previous.url %}
+  <dt>Previous version:</dt>
+  <dd><a href="{{site.url}}{{page.previous.url}}">{{site.url}}{{page.previous.url}}</a></dd>
+  {% endif %} 
+
+  <h2>Draft specification</h2>
                         
-                        <dd><a href="{{page.previous.url}}">{{site.url}}{{page.previous.url}}</a></dd>
-                        {% endif %} 
-
-                        <h2>Draft specification</h2>
-
                         <dt>Authors:</dt>
 
                         <dd>Nigel Ward, <a
@@ -653,6 +648,17 @@ title: Atom representation of Research Data Context
                                         <td>1</td>
                                 </tr>
                                 <tr>
+                                        <td>alternative title</td>
+                                        <td><code>&lt;rdfa:meta
+                                                property="http://purl.org/dc/terms/alternative"
+                                                content="ALTERNATIVE NAME"/&gt;</code></td>
+                                        <td>Primary name for the entity</td>
+                                        <td>0..*</td>
+                                        <td>0..*</td>
+                                        <td>0..*</td>
+                                        <td>0..*</td>
+                                </tr>
+                                <tr>
                                         <td>description</td>
                                         <td><code>&lt;content
                                                 type=”text”&gt;DESCRIPTION&lt;/content&gt;</code></td>
@@ -677,8 +683,10 @@ title: Atom representation of Research Data Context
                                         <td>email</td>
                                         <td><code>&lt;link rel=”http://xmlns.com/foaf/0.1/mbox”
                                                 href=”MAILTO-URI”/&gt;</code> </td>
-                                        <td>An internet mailbox for an Agent</td>
-                                        <td></td>
+                                        <td>An internet mailbox for contacting an Agent.
+                                            When applied to a Data collection, it is the contact point for an Agent
+                                            that can mediate access</td>
+                                        <td>0..*</td>
                                         <td>0..*</td>
                                         <td></td>
                                         <td></td>
@@ -812,11 +820,11 @@ title: Atom representation of Research Data Context
                                                 property="http://purl.org/dc/terms/temporal"
                                                 content="TEMPORAL ENCODING"
                                                 datatype="URI-ENCODING-SCHEME"/&gt;</code> </td>
-                                        <td>An indicator of the temporal scope of the Data
-                                                Collection. This profile recommends using the DCMI
-                                                Period format
-                                                http://dublincore.org/documents/dcmi-period/ to
-                                                encode the content attribute. </td>
+                                        <td>An indicator of the temporal scope of the entity.
+                                            This profile recommends using the DCMI
+                                            Period format
+                                            http://dublincore.org/documents/dcmi-period/ to
+                                            encode the content attribute. </td>
                                         <td>0..*</td>
                                         <td></td>
                                         <td>0..*</td>
@@ -883,7 +891,7 @@ title: Atom representation of Research Data Context
                         </thead>
                         <tbody>
                                 <tr>
-                                        <td>point</td>
+                                        <td>rights</td>
                                         <td><code>&lt;rights&gt;RIGHTS
                                                 TEXT&lt;/rights&gt;</code></td>
                                         <td>Information about rights held in and over the
@@ -901,10 +909,10 @@ title: Atom representation of Research Data Context
                                         <td>Information about who can access the entity, including
                                                 access restrictions based on privacy, security, or
                                                 other policies.</td>
-                                        <td>0..*</td>
+                                        <td>1..*</td>
                                         <td></td>
                                         <td></td>
-                                        <td>0..*</td>
+                                        <td>1..*</td>
                                 </tr>
                                 <tr>
                                         <td>license</td>
@@ -912,10 +920,11 @@ title: Atom representation of Research Data Context
                                                 href="LICENSE_URI"/&gt;</code></td>
                                         <td>Identifies a document containing a license for use of
                                                 the entity.</td>
-                                        <td>1..*</td>
+                                        <td>0..*</td>
                                         <td></td>
                                         <td></td>
-                                        <td>1..*</td>
+                                        <td>0..*</td>
+
                                 </tr>
                         </tbody>
                 </table>
@@ -941,7 +950,7 @@ title: Atom representation of Research Data Context
                                                 title="COLLECTION TITLE"/&gt;</code></td>
                                         <td>A Data Collection that is somehow related to the Data
                                                 Collection being described</td>
-                                        <td>1..*</td>
+                                        <td>0..*</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -954,7 +963,7 @@ title: Atom representation of Research Data Context
                                                 title"/&gt;</code></td>
                                         <td>A Publication that provides contextual information about
                                                 a Data Collection</td>
-                                        <td>1..*</td>
+                                        <td>0..*</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -966,7 +975,7 @@ title: Atom representation of Research Data Context
                                                 href="ACTIVITY_URI"/&gt; title="ACTIVITY
                                                 NAME"</code></td>
                                         <td>An Activity that helped produce the Data Collection</td>
-                                        <td>1..*</td>
+                                        <td>0..*</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -979,7 +988,7 @@ title: Atom representation of Research Data Context
                                                 NAME"/&gt;</code></td>
                                         <td>A Report, Harvest, Search, or Syndicate Service that
                                                 provides access to the Data Collection.</td>
-                                        <td>1..*</td>
+                                        <td>0..*</td>
                                         <td></td>
                                         <td></td>
                                         <td></td>
@@ -1050,7 +1059,7 @@ title: Atom representation of Research Data Context
                         </tbody>
                 </table>
 
-                <p>Note: an agent MUST participate in a "related collection" or "publishes" relationship.</p>
+                <p>Note: an agent MUST participate in a "created" or "manages" relationship.</p>
 
                 <h2><a
                         id="s_activityrelations">3.9. Activity relationships</a></h2>
@@ -1098,7 +1107,7 @@ title: Atom representation of Research Data Context
                                         <td>An agent that funds the Activity</td>
                                         <td></td>
                                         <td></td>
-                                        <td>1..*</td>
+                                        <td>0..*</td>
                                         <td></td>
                                 </tr>
                         </tbody>
